@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Мета-теги та зовнішні ресурси -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Верхній блок сторінки -->
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="home.html" class="logo"><i class="fas fa-briefcase"></i> TechJob</a>
+            <!-- Навігаційне меню -->
+            <nav class="navbar">
+                <a href="candidates.html">candidates</a>
+                <a href="post_job.html">Post a job</a>
+                <a href="my_jobs.html">My jobs</a>
+                <a href="applications.html">Applications</a>
+            </nav>
+            <a href="login.html" class="btn" style="margin-top: 0;">log out</a>
+        </section>
+    </header>
+
+    <section class="contact">
+
+        <!-- Форма для створення вакансії -->
+        <form action="" method="post">
+            <h3>Post a job!</h3>
+            <div class="flex">
+
+                <!-- Поля для введення інформації про вакансію -->
+                <div class="box">
+                    <p>title<span>*</span></p>
+                    <input type="text" name="title" required maxlength="20" placeholder="enter job title" class="input">
+                </div>
+                <div class="box">
+                    <p>company<span>*</span></p>
+                    <input type="text" name="company" required maxlength="50" placeholder="enter the employer" class="input">
+                </div>
+                <div class="box">
+                    <p>salary<span>*</span></p>
+                    <input type="number" name="salary" required min="0" max="9999999999" maxlength="20" placeholder="enter the salary" class="input">
+                </div>
+                <div class="box">
+                    <p>location<span>*</span></p>
+                    <input type="text" name="location" required maxlength="50" placeholder="enter the location" class="input">
+                </div>
+                <div class="box">
+                    <p>company logo<span>*</span></p>
+                    <input type="file" name="company logo" placeholder="attach the company logo" class="input" accept="image/png, image/jpeg">
+                </div>
+                <div class="box">
+                    <p>job type<span>*</span></p>
+                    <select name="job type" required class="input">
+                        <option value="full-time">full-time</option>
+                        <option value="part-time">part-time</option>
+                        <option value="freelance">freelance</option>
+                        <option value="temporary">temporary</option>
+                        <option value="internship">internship</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Текстове поле для введення опису вакансії -->
+            <p>description <span>*</span></p>
+            <textarea name="message" class="input" required maxlength="100000" placeholder="enter job description" cols="30" rows="10"></textarea>
+            
+            <!-- Кнопка для відправки форми -->
+            <input type="submit" value="post a job" name="send" class="btn">
+        </form>
+    </section>
+
+    <!-- Підключення скриптів для взаємодії зі сторінкою -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

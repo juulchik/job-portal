@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Мета-теги та зовнішні ресурси -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Верхній блок сторінки -->
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="home.html" class="logo"><i class="fas fa-briefcase"></i> TechJob</a>
+            <!-- Навігаційне меню -->
+            <nav class="navbar">
+                <a href="home.html">home</a>
+            </nav>
+            <a href="login.html" class="btn" style="margin-top: 0;">log in</a>
+        </section>
+    </header>
+
+    <div class="account-form-container">
+        <section class="account-form">
+
+            <!-- Форма реєстрації для рекрутера -->
+            <form id="registrationForm" action="candidates.html" method="post">
+                <h3>create new account!</h3>
+                <input type="text" required name="name" maxlength="20" placeholder="enter your name" class="input">
+                <input type="text" name="company" maxlength="20" placeholder="enter your company" class="input">
+                <input type="email" required name="corporate email" maxlength="50" placeholder="enter your corporate email" class="input">
+                <input type="password" required id="pass" minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" title="Password must be at least 8 characters long and contain at least one letter and one number" placeholder="enter your password" class="input">
+                <input type="password" required id="c_pass" minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" title="Password must be at least 8 characters long and contain at least one letter and one number" placeholder="confirm your password" class="input">
+                <p>already have an account? <a href="login_recruiter.html">login now</a></p>
+                <input type="submit" value="register now" name="submit" class="btn">
+            </form>
+        </section>
+    </div>
+
+    <!-- Підключення скриптів для взаємодії зі сторінкою -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

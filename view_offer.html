@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Мета-теги та зовнішні ресурси -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Верхній блок сторінки -->
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="home.html" class="logo"><i class="fas fa-briefcase"></i> TechJob</a>
+            <!-- Навігаційне меню -->
+            <nav class="navbar">
+                <a href="jobs.html">all jobs</a>
+                <a href="offers.html">offers</a>
+            </nav>
+            <a href="login.html" class="btn" style="margin-top: 0;">log out</a>
+        </section>
+    </header>
+
+    <!-- Відображення деталей про пропозицію -->
+    <section class="job-details">
+        <h1 class="heading">job details</h1>
+        <div class="details">
+
+            <!-- Інформація про посаду, компанію та локацію -->
+            <div class="job-info">
+                <h3>Senior Web Developer</h3>
+                <a href="view_company.html">SoftServe</a>
+                <p><i class="fas fa-map-marker-alt"></i> Lviv, Ukraine</p>
+            </div>
+
+            <!-- Основна інформація -->
+            <div class="basic-details">
+                <h3>salary</h3>
+                <p>2000 per month</p>
+                <h3>job type</h3>
+                <p>part-time</p>
+            </div>
+
+            <!-- Опис вакансії -->
+            <div class="description">
+                <h3>job description</h3>
+                <p>Join us as we transform the leisure and hospitality industry, with cutting edge technology and a mission driven purpose. We are a dynamic player in the temporary staffing segment of the hospitality industry, boasting our proprietary software platform that keeps our business operations running seamlessly. Currently, we are seeking an exceptionally skilled Senior Web Front-End (Angular) Developer to become a valued member of our team, this is a remote job.</p>
+                <ul>
+                    <li>Hiring 2 candidate for this role</li>
+                    <li>posted 2 days ago</li>
+                </ul>
+            </div>
+
+            <!-- Вимоги до кандидатів -->
+            <ul>
+                <h3>requirements</h3>
+                <li>education : <span>graduate</span></li>
+                <li>age : <span>25+</span></li>
+                <li>language : <span>english</span></li>
+                <li>experience : <span>3+ years</span></li>
+            </ul>
+
+            <!-- Необхідні навички -->
+            <ul>
+                <h3>qualifications</h3>
+                <li>Bachelor's (Preferred)</li>
+                <li>PHP: 1 year (Preferred)</li>
+                <li>web design: 1 year (Preferred)</li>
+                <li>WordPress: 1 year (Preferred)</li>
+                <li>total work : 3 years (Required)</li>
+            </ul>
+            <ul>
+                <h3>skills</h3>
+                <li>html5 and css3</li>
+                <li>javascript</li>
+                <li>node.js</li>
+                <li>react.js</li>
+                <li>php</li>
+                <li>mysql</li>
+            </ul>
+
+            <!-- Форма для прийняття чи відхилення пропозиції -->
+            <form action="offers.html" method="post">
+                <input type="submit" value="accept" name="accept" class="btn">
+            </form>
+            <form action="offers.html" method="post">
+                <input type="submit" value="decline" name="decline" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <!-- Підключення скриптів для взаємодії зі сторінкою -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

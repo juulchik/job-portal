@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Мета-теги та зовнішні ресурси -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Верхній блок сторінки -->
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="home.html" class="logo"><i class="fas fa-briefcase"></i> TechJob</a>
+            <!-- Навігаційне меню -->
+            <nav class="navbar">
+                <a href="home.html">home</a>
+            </nav>
+            <a href="login.html" class="btn" style="margin-top: 0;">log in</a>
+        </section>
+    </header>
+
+    <!-- Форма входу для рекрутерів-->
+    <div class="account-form-container">
+        <section class="account-form">
+            <form action="candidates.html" method="post">
+                <h3>welcome back!</h3>
+                <input type="email" required name="email" maxlength="50" placeholder="enter your corporate email" class="input">
+                <input type="password" required name="pass" maxlength="20" placeholder="enter your password" class="input">
+                <p>don't have an account? <a href="register_recruiter.html">register now</a></p>
+                <input type="submit" value="login now" name="submit" class="btn">
+            </form>
+        </section>
+    </div>
+
+    <!-- Підключення скриптів для взаємодії зі сторінкою -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
